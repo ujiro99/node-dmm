@@ -1,0 +1,14 @@
+{
+  "name": "dmm",
+  "version": "1.0.0",
+  "description": "Node.js Client for DMM Web Service API 2.0.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DMM Web Service API"
+  ],
+  "author": "ujiro99",
+  "license": "MIT"
+}
