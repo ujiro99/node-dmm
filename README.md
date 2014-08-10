@@ -1,11 +1,11 @@
 # node-dmm [![Build Status](https://travis-ci.org/ujiro99/node-dmm.svg)](https://travis-ci.org/ujiro99/node-dmm) [![NPM version](https://badge.fury.io/js/dmm.svg)](http://badge.fury.io/js/dmm)
-------
+
 
 Node.js Client for DMM Web Service API 2.0.
 
 ## Installation
 
-  npm install dmm --save
+    npm install dmm --save
 
 ## Usage
 
