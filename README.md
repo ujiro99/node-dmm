@@ -14,7 +14,7 @@ Sample.
 ```js
 var dmm = require('dmm');
 
-params = {
+var params = {
   api_id: your api_id
   affiliate_id: your affiliate_id
   site: 'DMM.co.jp'
