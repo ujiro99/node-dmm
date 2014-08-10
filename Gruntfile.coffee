@@ -55,5 +55,6 @@ module.exports = (grunt) ->
 
   # tasks
   grunt.registerTask 'watch', ['esteWatch']
+  grunt.registerTask 'build', ['coffee:compile']
   grunt.registerTask 'test', ['mochaTest']
 
