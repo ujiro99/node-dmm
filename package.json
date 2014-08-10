@@ -1,14 +1,31 @@
 {
   "name": "dmm",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Node.js Client for DMM Web Service API 2.0.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "keywords": [
-    "DMM Web Service API"
+    "DMM Web Service API 2.0"
   ],
-  "author": "ujiro99",
-  "license": "MIT"
+  "author": "Ujiro99",
+  "license": "MIT",
+  "dependencies": {
+    "http-status": "^0.1.8",
+    "iconv": "^2.1.4",
+    "request": "^2.40.0",
+    "validator": "^3.16.1",
+    "xml2json": "^0.4.0"
+  },
+  "devDependencies": {
+    "sinon": "^1.10.3",
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "coffee-script": "^1.7.1",
+    "grunt-contrib-coffee": "^0.11.0",
+    "grunt-este-watch": "^0.1.17",
+    "grunt-mocha-test": "^0.11.0",
+    "load-grunt-tasks": "^0.6.0"
+  }
 }
