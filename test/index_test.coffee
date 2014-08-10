@@ -17,7 +17,7 @@ describe 'index.js のテスト', ->
         expect(err).to.be.exist
         done()
 
-    it 'site: DMM.co.jp', (done) ->
+    it 'success', (done) ->
       params =
         api_id: param.api_id
         affiliate_id: param.affiliate_id
