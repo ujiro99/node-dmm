@@ -24,6 +24,9 @@ class DmmParam
     sort:         (value) -> validator.isLength(value, 0, 20)
     keyword:      (value) -> validator.isLength(value, 0, 100)
     site:         (value) -> validator.matches(value, /(DMM.com|DMM.co.jp)/)
+    operation:    (value) -> validator.isAscii(value)
+    version:      (value) -> validator.isFloat(value)
+    timestamp:    (value) -> validator.isDate(value)
 
   # parameter key list
   validKeys = []
@@ -51,7 +54,10 @@ class DmmParam
     for k, v of optionalParams then param[k] = v if v?
 
     # encode
-    param.timestamp = encodeURIComponent util.getTimestamp()
+    if param.timestamp?
+      param.timestamp = encodeURIComponent param.timestamp
+    else
+      param.timestamp = encodeURIComponent util.getTimestamp()
     if param.keyword? && param.keyword.length isnt 0
       param.keyword = ecl.EscapeEUCJP param.keyword
 
